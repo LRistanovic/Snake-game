@@ -102,7 +102,7 @@ function update(animationTime) {
             snake.pop();
         }
 
-        if(snake[0].x > canvas.width-block || snake[0].x < block || snake[0].y < 2*block || snake[0].y > canvas.height-block) { //provjerim ako je glava izasao
+        if(snake[0].x > canvas.width-block*2 || snake[0].x < block || snake[0].y < 2*block || snake[0].y > canvas.height-block*2) { //provjerim ako je glava izasao
             gameOver = true;
         }
     }
